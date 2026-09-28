@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mitos e Verdade</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h4>Os alimentos preparados no microondas podem provocar câncer</h4>
+      <img
+        class="img-card"
+        src="https://images.emedicinehealth.com/images/slideshow/emss-topper/cancer.jpg?output-quality=75"
+        alt=""
+      />
+      <p class="descricao">
+        O microondas não irá tornar sua comida radioativa já que ele apenas
+        aquece o seu alimento ao produzir uma radiação não ionizante, absorvida
+        pelas moléculas do produto congelado. Ao vibrar, essas moléculas
+        produzem calor, aquecendo seu alimento.
+      </p>
+      <button class="btn-card" onclick="mostrarModal()">Saiba mais</button>
+    </div>
+
+    <div class="card">
+      <h4>Pessoas de pele negra não tem câncer de pele</h4>
+      <img
+        class="img-card"
+        src="https://www.cancerresearch.org/wp-content/uploads/2022/06/31a1f887-1bf7-4d21-8780-cc86c8222968.png"
+        alt=""
+      />
+      <p class="descricao">
+        Apesar da maior concentração de melanina, a pele negra também pode ser
+        acometida pela doença, embora a incidência seja muito maior em pessoas
+        de pele mais clara. A fotoproteção é indicada para todos os tipos de
+        pele
+      </p>
+      <button class="btn-card" onclick="mostrarModal()">Saiba mais</button>
+    </div>
+
+    <dialog id="modal" class="modal">
+      <div class="modal-style">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiLZXHKKiodmaWZhb9qRZrX4vrDfWAXBWDyTBRyu4x5g&s=10"
+          alt=""
+        />
+        <span>
+          Muito se ouve falar por aí sobre o câncer, entretanto, muita coisa que
+          lemos ou temos acesso nem sempre é verdade e precisamos estar sempre
+          nos informando através de portais idôneos e falar abertamente sobre a
+          doença. A palavra “câncer” ainda tem um peso muito grande, estando
+          relacionada a inúmeros preconceitos e assustando pessoas com pouco
+          acesso à informação e à saúde. Embora estejamos no século XXI, há
+          ainda quem evite pronunciar a palavra câncer, como um prenúncio de mau
+          agouro, ou seja, má sorte ou de algo ruim irá acontecer. Muitos mitos
+          ainda precisam ser descontruídos e o Centro de Oncologia de ABC,
+          enquanto, não apenas clínica especializada no tratamento do paciente
+          oncológico, como também no papel de difusor de informações acerca da
+          doença, deseja cada dia mais ter um espaço aberto de comunicação.
+        </span>
+
+        <button id="btn-modal" onclick="fecharModal()">Fechar</button>
+      </div>
+    </dialog>
+    <script src="app.js"></script>
+  </body>
+</html>
